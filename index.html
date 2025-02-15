@@ -497,7 +497,7 @@
   <body>
     <!-- Background Music -->
     <audio
-      src="https://feeldreams.github.io/audio/foreveryoung.mp3"
+      src="asset/music/musik.mp3"
       id="linkmp3"
     ></audio>
 
@@ -528,7 +528,47 @@
             <img src="https://feeldreams.github.io/weee.gif" />
           </div>
           <h1 id="teks2" class="scale0 quicksand" style="font-size: 18px">
-            Aku Ada Sesuatu Nih 😝<br /><br />
+            Let’s flip a coin. Head, I’m yours. Tails, you’re mine😝<br /><br />
+            >>>>
+          </h1>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="stiker3" class="scale0 stiker">
+            <img src="asset/stkr/Stiker 15.gif" />
+          </div>
+          <h1 id="teks3" class="scale0 quicksand" style="font-size: 18px">
+            Hehe maaf agak maksa, soalnya kalo agak gila itu aku tiap ngeliat kamu😍<br /><br />
+            >>>>
+          </h1>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="stiker4" class="scale0 stiker">
+            <img src="asset/stkr/Stiker 16.gif" />
+          </div>
+          <h1 id="teks4" class="scale0 quicksand" style="font-size: 18px">
+            The world needs matcha, but all I need is my matcha girl💍<br /><br />
+            >>>>
+          </h1>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="stiker5" class="scale0 stiker">
+            <img src="asset/stkr/Stiker 47.gif" />
+          </div>
+          <h1 id="teks5" class="scale0 quicksand" style="font-size: 18px">
+            Cyat cyat cyattt MATCHA number oneee !!!!<br /><br />
+            >>>>
+          </h1>
+        </div>
+
+        <div class="swiper-slide">
+          <div id="stiker6" class="scale0 stiker">
+            <img src="asset/stkr/Stiker 36.gif" />
+          </div>
+          <h1 id="teks6" class="scale0 quicksand" style="font-size: 18px">
+            Main games dulu yuu bubb, geserrrrr...<br /><br />
             >>>>
           </h1>
         </div>
@@ -536,8 +576,8 @@
         <div class="swiper-slide">
           <!-- Memory Game -->
           <div class="main-card">
-            <h1 id="teks3" class="scale0 quicksand" style="font-size: 18px">
-              Coba Selesaikan<br /><i class="pink">Memory Game</i> ini yaa! 😆
+            <h1 id="teks7" class="scale0 quicksand" style="font-size: 18px">
+              Coba selesainn<br /><i class="pink">Memory Game</i> ini yaa! 😆
             </h1>
             <div class="game-board">
               <div class="card" data-emoji="🫶"></div>
@@ -564,7 +604,7 @@
           </div>
 
           <!-- Ketika Sudah Diselesaikan -->
-          <div id="stiker4" class="abs scale0 stiker" style="margin-top: 70px">
+          <div id="stiker8" class="abs scale0 stiker" style="margin-top: 70px">
             <img
               id="stikerAkhir1"
               src="https://feeldreams.github.io/pandapanah.gif"
@@ -587,7 +627,7 @@
           </div>
           <div id="scroll-container" class="blocktext scale0 abs">
             <h1
-              id="teks4"
+              id="teks8"
               class="quicksand"
               style="font-size: 17px; font-weight: 400"
             >
@@ -618,7 +658,7 @@
             stikerScale = document.querySelector("#stiker" + teksSekarang);
 
             setTimeout(function () {
-              if (teksSekarang < 3) {
+              if (teksSekarang < 7) {
                 teksScale.classList.add("scale1");
                 stikerScale.classList.add("scale1");
               } else {
@@ -634,17 +674,17 @@
         },
       });
 
-      initeks = teks4.innerHTML;
-      teks4.innerHTML = "";
+      initeks = teks8.innerHTML;
+      teks8.innerHTML = "";
       function katanimasi() {
-        teks4.innerHTML = "";
-        new TypeIt("#teks4", {
+        teks8.innerHTML = "";
+        new TypeIt("#teks8", {
           strings: ["" + initeks],
           startDelay: 10,
           speed: 25,
           cursor: true,
           afterComplete: function () {
-            teks4.innerHTML = initeks;
+            teks8.innerHTML = initeks;
 
             setTimeout(function () {
               teksScale.classList.remove("scale1");
@@ -669,16 +709,16 @@
       }
 
       function katanimasi2() {
-        teks4.innerHTML = "";
-        teks4.style.fontSize = "16px";
+        teks8.innerHTML = "";
+        teks8.style.fontSize = "16px";
         initeksAkhir = `Menurut biologi kamu adalah <span class="kuning">7%</span> darah,<br>Menurut kimia kamu adalah <span class="kuning">70%</span> air,<br>Menurut fisika kamu adalah<br><span class="kuning">99%</span> ruang hampa.<br><br>Tapi menurut aku, kamu adalah<br><b><span class="pink">100%</span> kesayangankuuu 🫣🩷</b>`;
-        new TypeIt("#teks4", {
+        new TypeIt("#teks8", {
           strings: ["" + initeksAkhir],
           startDelay: 1,
           speed: 25,
           cursor: true,
           afterComplete: function () {
-            teks4.innerHTML =
+            teks8.innerHTML =
               initeksAkhir + `<br><br><span id="teksLove"></span>`;
             setTimeout(katanimasi3, 200);
           },
@@ -686,7 +726,7 @@
       }
 
       function katanimasi3() {
-        initeksAkhir = `<b>Lopyuu ayangkuu</b> tersayang,<br>termanis, terlucu, terimuutttt<br><b>sehat terus yaa sayanggg 🥳💐</b>`;
+        initeksAkhir = `<b>Lopyuu ayangkuu</b> tersayang,<br>termanis, terlucu, terimuutttt<br><b>love u so muchh bububbb 🥳💐</b>`;
         new TypeIt("#teksLove", {
           strings: ["" + initeksAkhir],
           startDelay: 1,
@@ -699,12 +739,12 @@
             setTimeout(function () {
               clearInterval(scrollInterval);
             }, 500);
-            stiker4.classList.remove("scale1");
-            stiker4.classList.add("scale0");
+            stiker8.classList.remove("scale1");
+            stiker8.classList.add("scale0");
             setTimeout(function () {
               stikerAkhir1.src = stikerAkhir100.src;
-              stiker4.classList.remove("scale0");
-              stiker4.classList.add("scale1");
+              stiker8.classList.remove("scale0");
+              stiker8.classList.add("scale1");
             }, 400);
           },
         }).go();
@@ -889,8 +929,8 @@
         setTimeout(() => {
           document.querySelector(".main-card").style =
             "transform:scale(0);opacity:0 !important;transition:all .7s ease";
-          stikerScale = document.querySelector("#stiker4");
-          teksScale = document.querySelector("#teks4");
+          stikerScale = document.querySelector("#stiker8");
+          teksScale = document.querySelector("#teks8");
 
           setTimeout(() => {
             document.querySelector(".main-card").style.display = "none";
